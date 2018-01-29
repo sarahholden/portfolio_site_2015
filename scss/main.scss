@@ -1,0 +1,27 @@
+
+
+// orange
+$orange: #FD6C54;
+$lightBlue: #5673B7;
+$lightPurple: #B5A2C1;
+$pink: #F9B0B3;
+$darkPurple: #371A27;
+
+$linkColor: $darkPurple;
+$lightLinkColor: #ffffff;
+$darkLinkColor: $darkPurple;
+$calloutBgColor: $pink;
+$lightBgColor: #88CFE1;
+$lightOnDarkText: $pink;
+
+$mobileBodyTextSize: 1.3rem;
+$sans-serif: "soleil", sans-serif;
+
+@import 'base_styles';
+@import 'typography';
+@import 'layout';
+@import 'header';
+@import 'nav';
+@import 'content';
+@import 'footer';
+@import 'form';

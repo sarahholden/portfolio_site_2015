@@ -1,0 +1,87 @@
+/* --------------------------------------------------------
+Base Layout
+----------------------------------------------------------- */
+.about .content-wrap--text {
+  padding: 0 20px;
+  transform: translateY(-80px)
+}
+
+.work .content-wrap--text,
+.quotes .content-wrap--text {
+  padding: 0 20px;
+  transform: translateY(-120px)
+}
+
+.content-wrap--block {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-wrap--text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header .content-wrap--text {
+  max-width: 670px;
+}
+
+/* --------------------------------------------------------
+Columns
+----------------------------------------------------------- */
+[class^="grid"] {
+  display: grid;
+  grid-gap: 50px;
+}
+.about .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.work .grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section {
+  padding: 0;
+}
+
+/* --------------------------------------------------------
+Mobile
+----------------------------------------------------------- */
+@media only screen and (max-width: 1000px) {
+  .about .content-wrap--text {
+    transform: translateY(-50px)
+  }
+
+  .work .content-wrap--text,
+  .quotes .content-wrap--text {
+    transform: translateY(-80px)
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .work .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  section {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about .content-wrap--text {
+    transform: translateY(-20px)
+  }
+
+  .work .content-wrap--text,
+  .quotes .content-wrap--text {
+    transform: translateY(-20px)
+  }
+
+  .about .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+}

@@ -1,0 +1,93 @@
+/* --------------------------------------------------------
+About
+----------------------------------------------------------- */
+.about {
+  li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+
+/* --------------------------------------------------------
+Work
+----------------------------------------------------------- */
+.work {
+  background-color: $orange;
+  p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+  li p {
+    margin-top: 0;
+    font-style: italic;
+    font-size: 1rem;
+    color: #767676;
+  }
+  li h4 {
+    margin-bottom: .4rem;
+  }
+  .grid:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+/* --------------------------------------------------------
+Quotes
+----------------------------------------------------------- */
+.divider-2 {
+  background-color: $orange;
+}
+
+.quotes {
+  background-color: $pink;
+}
+
+
+/* --------------------------------------------------------
+Play
+----------------------------------------------------------- */
+.play {
+  text-align: center;
+  margin: 30px 0 0;
+  padding: 0;
+  font-style: italic;
+  position: relative;
+  overflow: hidden;
+  p {
+    font-size: 1.6rem;
+  }
+  .play-bg {
+    background-color: $pink;
+  }
+  .content-wrap--text {
+    max-width: 510px;
+    position: relative;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* --------------------------------------------------------
+Contact
+----------------------------------------------------------- */
+.contact {
+  background-color: $darkPurple;
+  padding: 100px 10px;
+  color: $lightOnDarkText;
+  z-index: 2;
+  position: relative;
+  top: -2px;
+}
+
+/* --------------------------------------------------------
+Mobile
+----------------------------------------------------------- */
+@media only screen and (max-width: 800px) {
+  .work p {
+    font-size: $mobileBodyTextSize;
+    margin: 10px auto;
+  }
+}

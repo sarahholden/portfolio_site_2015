@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  font-family: "lemonde-journal", serif;
+  color: #292a2c;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 58px;
+  animation: 1.4s fadeInPage;
+}
+
+main {
+  position: relative;
+  z-index: 10;
+  background-color: $pink;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.823rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.17rem;
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+  margin-top: 0;
+}
+
+h2, h3, h4 {
+  font-weight: 500;
+  font-family: $sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $linkColor;
+  position: relative;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* --------------------------------------------------------
+Animations
+----------------------------------------------------------- */
+@keyframes fadeInPage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+
+  }
+}
+
+/* --------------------------------------------------------
+Mobile
+----------------------------------------------------------- */
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    max-width: 510px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
