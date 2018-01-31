@@ -1,6 +1,3 @@
-
-
-// orange
 $orange: #FD6C54;
 $lightBlue: #5673B7;
 $lightPurple: #B5A2C1;
@@ -16,9 +13,9 @@ $lightOnDarkText: $pink;
 
 $mobileBodyTextSize: 1.3rem;
 $sans-serif: "soleil", sans-serif;
+$serif: "lemonde-journal", serif;
 
 @import 'base_styles';
-@import 'typography';
 @import 'layout';
 @import 'header';
 @import 'nav';

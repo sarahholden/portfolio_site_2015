@@ -2,8 +2,6 @@ footer {
   overflow: hidden;
   padding: 20px 30px;
   background-color: $pink;
-  padding-left: 20px;
-  padding-right: 20px;
   a,
   a:visited {
     color: $darkLinkColor;
@@ -19,7 +17,6 @@ footer {
     margin: 0;
     color: $darkLinkColor;
     font-family: $sans-serif;
-    // font-weight: bold;
   }
   .content-wrap--block {
     display: flex;

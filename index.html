@@ -12,8 +12,10 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--build:css css/styles.min.css-->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css?v5">
+  <!--endbuild-->
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -26,6 +28,7 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#work">Work</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
         <a href="#" class="close-burger">
           <span class="line"></span>
@@ -52,12 +55,13 @@
     </svg>
 
     <div class="content-wrap--text">
-      <h1>Hi, I&rsquo;m Sarah, a <strong>front-end web developer</strong> and <strong>instructor</strong> based in Los Angeles.</h1>
+      <h1>Hi, I&rsquo;m Sarah, a <strong>front-end web developer</strong> and <strong>instructor</strong> based in sunny Los Angeles.</h1>
+      <a href="#about" class="scroll-down-duh"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
     </div>
   </header>
   <main>
-    <section id="about" class="about">
-      <div class="grid content-wrap--text">
+    <section class="about">
+      <div id="about" class="grid content-wrap--text">
         <div>
           <h2>Front-End</h2>
           <ul>
@@ -91,8 +95,8 @@
     <svg class="divider-1" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1685 935">
       <path fill="#FD6C54" d="M0 936.65L1684.67 936.65 1684.67 818.05C1684.67 818.05 1509.89 547.33 1356.03 538.78 1171.12 528.51 975.41 617.54 776.73 483.23 578.05 348.93 525.75 88.53 367.16 33.44 245.87-8.69 202.61 20.64 0 1.53L0 936.65Z" pathdata:id="M0 936.65L1684.67 936.65 1684.67 692.89C1684.67 692.89 1621.66 556.63 1427.23 556.63 1241.4 556.63 911.98 671.24 728.55 587.68 545.13 504.12 541.9 281.21 382.8 148.67 303.46 82.57 202.61 20.64 0 1.53L0 936.65Z"/>
     </svg>
-    <section id="work" class="work">
-      <div class="content-wrap--text">
+    <section class="work">
+      <div id="work" class="content-wrap--text">
         <h2>Work</h2>
         <div class="grid">
           <div>
@@ -102,37 +106,37 @@
             <ul>
               <li>
                 <h4>
-                  <a href="https://app.kinhr.com/">KinHR App</a>
+                  <a target="_blank" href="https://app.kinhr.com/">KinHR App</a>
                 </h4>
                 <!-- <p>Backbone, Require, JavaScript, SCSS, Foundation, HTML5</p> -->
               </li>
               <li>
                 <h4>
-                  <a href="https://kinhr.com/">KinHR Marketing Site</a>
+                  <a target="_blank" href="https://kinhr.com/">KinHR Marketing Site</a>
                 </h4>
                 <!-- <p>Wordpress, Foundation, SCSS, and HTML5</p> -->
               </li>
               <li>
                 <h4>
-                  <a href="https://www.earnest.com/refinance-student-loans&redirect_event=true">Earnest</a>
+                  <a target="_blank" href="https://www.earnest.com/refinance-student-loans&redirect_event=true">Earnest</a>
                 </h4>
                 <!-- <p>Angular, JavaScript, Mocha, Karma SCSS, HTML5</p> -->
               </li>
               <li>
                 <h4>
-                  <a href="https://www.luceris.com/">Luceris</a>
+                  <a target="_blank" href="https://www.luceris.com/">Luceris</a>
                 </h4>
                 <!-- <p>Angular, JavaScript, SCSS, HTML5</p> -->
               </li>
               <li>
                 <h4>
-                  <a href="https://www.foundergym.com/">Founder Gym</a>
+                  <a target="_blank" href="https://www.foundergym.com/">Founder Gym</a>
                 </h4>
                 <!-- <p>JavaScript, CSS, HTML5</p> -->
               </li>
               <li>
                 <h4>
-                  <a href="http://freudians.org/">SPI</a>
+                  <a target="_blank" href="http://freudians.org/">SPI</a>
                 </h4>
                 <!-- <p>Wordpress, SCSS, and HTML5</p> -->
               </li>
@@ -142,33 +146,33 @@
         <h2>Instructor</h2>
         <div class="grid">
           <div>
-            <p>Since 2015, I&rsquo;ve taught over a thousand students the basics of web development at <a href="https://generalassemb.ly/instructors/sarah-holden/3850">General Assembly</a>. I believe wholeheartedly that learning <em>can</em> and <em>should</em> be fun.</p>
+            <p>Since 2015, I&rsquo;ve taught over a thousand students the basics of web development at <a target="_blank" href="https://generalassemb.ly/instructors/sarah-holden/3850">General Assembly</a>. I believe wholeheartedly that learning <em>can</em> and <em>should</em> be fun.</p>
           </div>
           <div>
             <ul>
               <li>
                 <h4>
-                  <a href="https://generalassemb.ly/education/front-end-web-development">Front-End Development 10-Week Courses</a>
+                  <a target="_blank" href="https://generalassemb.ly/education/front-end-web-development">Front-End Development</a>
                 </h4>
               </li>
               <li>
                 <h4>
-                  <a href="https://generalassemb.ly/education/front-end-web-development">Front-End Bootcamps</a>
+                  <a target="_blank" href="https://generalassemb.ly/education/front-end-web-development">Front-End Bootcamps</a>
                 </h4>
               </li>
               <li>
                 <h4>
-                  <a href="https://generalassemb.ly/education/front-end-web-development">JavaScript Workshops</a>
+                  <a target="_blank" href="https://generalassemb.ly/education/front-end-web-development">JavaScript Workshops</a>
                 </h4>
               </li>
               <li>
                 <h4>
-                  <a href="https://generalassemb.ly/education/front-end-web-development">Intro to Coding Workshops</a>
+                  <a target="_blank" href="https://generalassemb.ly/education/front-end-web-development">Intro to Coding Workshops</a>
                 </h4>
               </li>
               <li>
                 <h4>
-                  <a href="https://generalassemb.ly/education/front-end-web-development">Ruby on Rails Workshops</a>
+                  <a target="_blank" href="https://generalassemb.ly/education/front-end-web-development">Ruby on Rails Workshops</a>
                 </h4>
               </li>
             </ul>
@@ -183,22 +187,22 @@
             <ul>
               <li>
                 <h4>
-                  <a href="https://generalassemb.ly/education/learn-html-css-web-design-online">HTML &amp; CSS Online Course</a>
+                  <a target="_blank" href="https://generalassemb.ly/education/learn-html-css-web-design-online">HTML &amp; CSS Online Course</a>
                 </h4>
               </li>
               <li>
                 <h4>
-                  <a href="https://generalassemb.ly/education/learn-javascript-online">JavaScript Online Course</a>
+                  <a target="_blank" href="https://generalassemb.ly/education/learn-javascript-online">JavaScript Online Course</a>
                 </h4>
               </li>
               <li>
                 <h4>
-                  <a href="https://generalassemb.ly/education/front-end-web-development">Web Development Immersive Curriculum</a>
+                  <a target="_blank" href="https://generalassemb.ly/education/front-end-web-development">Web Development Immersive Curriculum</a>
                 </h4>
               </li>
               <li>
                 <h4>
-                  <a href="https://generalassemb.ly/credentials">Credentials Skills Assesments</a>
+                  <a target="_blank" href="https://generalassemb.ly/credentials">Credentials Skills Assessments</a>
                 </h4>
               </li>
             </ul>
@@ -210,35 +214,53 @@
       <path fill="#F9B0B3" d="M0 936.65L1684.67 936.65 1684.67 818.05C1684.67 818.05 1509.89 547.33 1356.03 538.78 1171.12 528.51 975.41 617.54 776.73 483.23 578.05 348.93 525.75 88.53 367.16 33.44 245.87-8.69 202.61 20.64 0 1.53L0 936.65Z" pathdata:id="M0 936.65L1684.67 936.65 1684.67 692.89C1684.67 692.89 1621.66 556.63 1427.23 556.63 1241.4 556.63 911.98 671.24 728.55 587.68 545.13 504.12 541.9 281.21 382.8 148.67 303.46 82.57 202.61 20.64 0 1.53L0 936.65Z"/>
     </svg>
     <section class="quotes">
-      <div class="content-wrap--text">
-        <blockquote class="col-md-4">
-          <p>Sarah Holden is an amazing instructor. She always went above and beyond to help me out when I was stuck. Her keen sense of design made her presentations and labs more engaging. She exemplifies who I want to become (a superhuman designer/developer hybrid).</p>
-          <footer>
-            &mdash; Erica Rodriguez
-          </footer>
-        </blockquote>
+      <div id="testimonials" class="grid content-wrap--text">
+        <div id="quote1" class="quote">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1374 1084">
+            <path fill="#371A27" fill-rule="evenodd" d="M829.390625,0.890625 C391.03125,0.890625 217.390625,91.53125 158.203125,308.5625 C99.015625,525.59375 113.265625,675.828125 115.625,752.78125 C116.28125,808.796875 0.09375,1083.125 0.09375,1083.125 C0.09375,1083.125 283.46875,948.0625 329.5,958.484375 C385.64622,962.078125 1138.79688,1033.75 1313.3125,693.78125 C1487.82812,353.8125 1267.75,0.890625 829.390625,0.890625 Z"/>
+          </svg>
+          <blockquote class="col-md-4">
+            <p>Sarah Holden is an amazing instructor. She always went above and beyond to help me out when I was stuck. Her keen sense of design made her presentations and labs more engaging. She exemplifies who I want to become (a superhuman designer/developer hybrid).</p>
+            <footer>
+              &mdash; Erica Rodriguez
+            </footer>
+          </blockquote>
+        </div>
+        <div id="quote2" class="quote">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 507 507">
+            <path fill="#5673B7" fill-rule="evenodd" d="M4.40817537,168.35939 C-11.0441643,280.74843 15.3230524,390.627212 64.8036476,426.259319 C114.284243,461.891426 370.037561,421.711001 397.221629,441.14719 C424.405698,460.583378 507,506.79928 507,506.79928 C507,506.79928 466.637751,388.800829 467.801968,376.710879 C468.966185,364.620929 478.854274,178.642916 442.67398,99.3540138 C406.493686,20.0651119 307.353386,6.57213111 205.41245,0.41996146 C103.471515,-5.73220819 19.860515,55.9703504 4.40817537,168.35939 Z"/>
+          </svg>
 
-        <blockquote class="col-md-4">
-          <p>Sarah has been a joy to work with at General Assembly. Her knowledge of the content is amazing and she is always willing to go above and beyond what she has to do as an instructor to make sure her students are successful. She also has the ability to work with diverse populations and adapt to needs of beginning learners. I would highly recommend Sarah for Programming and education jobs in the future.</p>
-          <footer>
-            &mdash; Gabe Nelson
-          </footer>
-        </blockquote>
-        <blockquote class="col-md-4">
-          <p>Sarah was a fantastic front-end web development instructor at General Assembly. Sarah&rsquo;s knowledge and patience made the learning process that much easier, especially for the daunting world of JavaScript! I strongly recommend Sarah as an web development instructor or mentor and hope our paths somehow cross in the future!</p>
-          <footer>
-            &mdash; Rory Baumstein
-          </footer>
-        </blockquote>
-        <blockquote class="col-md-4">
-          <p>If you have the opportunity to work with Sarah, seize it. Sarah is, without a doubt, one of the most reliable, kind-hearted, and talented people I&rsquo;ve ever worked with. I worked with Sarah since General Assembly Chicago opened its doors, and she was an absolutely crucial part of GA Chicago&rsquo;s success and set an amazingly high standard for quality and professionalism.</p>
-          <p>Besides being an impressive web developer, Sarah is truly an exceptional teacher, consistently achieving some of the highest student happiness ratings at General Assembly EVER. She has the rare ability to take complex and seemingly mind-boggling concepts and make them accessible and fun to people from different skill levels. As such, Sarah not only successfully teaches students the technical content of her courses, but also empowers students with a confidence and mindset that allow them to go off and tackle other seemingly daunting challenges as well.</p>
-          <p>She&rsquo;s someone I (and others on my team) could always trust 100%, and I have thoroughly enjoyed working with her. I would recommend her highly to any team!</p>
-          <footer>
-            &mdash; Rory Baumstein
-          </footer>
-        </blockquote>
-
+          <blockquote class="col-md-4">
+            <p>Sarah has been a joy to work with at General Assembly. Her knowledge of the content is amazing and she is always willing to go above and beyond what she has to do as an instructor to make sure her students are successful. She also has the ability to work with diverse populations and adapt to needs of beginning learners. I would highly recommend Sarah for Programming and education jobs in the future.</p>
+            <footer>
+              &mdash; Gabe Nelson
+            </footer>
+          </blockquote>
+        </div>
+        <div id="quote3" class="quote">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1349 1205">
+            <path fill="#B5A2C1" fill-rule="evenodd" d="M73.0625,378.000438 C4.1328125,721.656688 152.24741,844.464548 133.242187,963.781688 C119.043985,1007.83551 0,1204.5395 0,1204.5395 C0,1204.5395 291.96875,1119.19575 340.0625,1131.52388 C555.148437,1190.79731 1017.89844,1186.08638 1171.80469,1096.07856 C1325.71094,1006.07075 1350.24219,765.75825 1348.78906,508.094188 C1347.33594,250.430125 1194.59375,-0.382374848 790.320312,0.000437652384 C386.046875,0.383250152 141.992187,34.3441877 73.0625,378.000438 Z"/>
+          </svg>
+          <blockquote class="col-md-4">
+            <p>Sarah was a fantastic front-end web development instructor at General Assembly. Sarah&rsquo;s knowledge and patience made the learning process that much easier, especially for the daunting world of JavaScript! I strongly recommend Sarah as an web development instructor or mentor and hope our paths somehow cross in the future!</p>
+            <footer>
+              &mdash; Rory Baumstein
+            </footer>
+          </blockquote>
+        </div>
+        <div id="quote4" class="quote">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1595 1680">
+            <path fill="#FD6C54" fill-rule="evenodd" d="M856.021358,8.54305976 C583.677608,-12.3710027 232.997921,-17.7538152 96.9276081,274.769622 C-39.1427044,567.29306 -34.9473919,1192.62118 128.560421,1420.33212 C292.068233,1648.04306 1073.55261,1422.70712 1265.83386,1507.11337 C1458.11511,1591.51962 1594.09167,1679.62118 1594.09167,1679.62118 C1594.09167,1679.62118 1453.62292,1420.33212 1481.5448,1294.34775 C1509.46667,1168.36337 1571.56042,374.76181 1453.62292,230.48056 C1335.68542,86.1993098 1128.36511,29.4571223 856.021358,8.54305976 Z"/>
+          </svg>
+          <blockquote class="col-md-4">
+            <p>If you have the opportunity to work with Sarah, seize it. Sarah is, without a doubt, one of the most reliable, kind-hearted, and talented people I&rsquo;ve ever worked with. I worked with Sarah since General Assembly Chicago opened its doors, and she was an absolutely crucial part of GA Chicago&rsquo;s success and set an amazingly high standard for quality and professionalism.</p>
+            <p>She&rsquo;s someone I (and others on my team) could always trust 100%, and I have thoroughly enjoyed working with her. I would recommend her highly to any team!</p>
+            <footer>
+              &mdash; Annie Lin
+            </footer>
+          </blockquote>
+        </div>
       </div>
     </section>
 
@@ -291,19 +313,22 @@
   <footer>
     <div class="content-wrap--block">
       <p>&copy; Sarah Holden 2018 </p>
-      <a href="https://www.instagram.com/sarah__holden/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/sarah-holden-0321a72b"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-      <a href="https://www.facebook.com/sarahbethholden"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://www.instagram.com/sarah__holden/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/sarah-holden-0321a72b"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://www.facebook.com/sarahbethholden"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
     </div>
   </footer>
 
-  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <!--build:js js/main.min.js -->
+  <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
   <script src="js/vendor/modernizr-3.5.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
   <script src="js/vendor/anime.min.js"></script>
+  <script src="js/vendor/scroll.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v4"></script>
+  <!-- endbuild -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

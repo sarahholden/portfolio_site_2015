@@ -3,18 +3,12 @@ Base Layout
 ----------------------------------------------------------- */
 .about .content-wrap--text {
   padding: 0 20px;
-  transform: translateY(-80px)
 }
 
 .work .content-wrap--text,
 .quotes .content-wrap--text {
   padding: 0 20px;
-  transform: translateY(-120px)
-}
-
-.content-wrap--block {
-  max-width: 1200px;
-  margin: 0 auto;
+  transform: translateY(-120px);
 }
 
 .content-wrap--text {
@@ -33,6 +27,7 @@ Columns
   display: grid;
   grid-gap: 50px;
 }
+
 .about .grid {
   grid-template-columns: repeat(3, 1fr);
 }

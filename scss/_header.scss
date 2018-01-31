@@ -5,17 +5,19 @@ header {
   position: relative;
   background-color: #00C2D4;
   overflow: hidden;
+  padding: 20px;
   h1 {
-    animation: 1.7s slideUpFadeIn;
+    animation: 2.5s slideUpFadeIn;
     position: relative;
     z-index: 4;
     color: white;
   }
   .content-wrap--text {
-    height: calc(100vh - 59px);
+    height: calc(100vh);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 }
 
@@ -30,7 +32,6 @@ header {
 
 .header-bg,
 .play-bg {
-
   path:first-child { fill: $orange; }
   path:nth-child(2) { fill: $lightBlue; }
   path:nth-child(3) { fill: $lightPurple; }
@@ -38,6 +39,19 @@ header {
   path:nth-child(5) { fill: $darkPurple; }
   path:nth-child(6) { fill: $lightBlue; }
   path:nth-child(7) { fill: $pink; }
+}
+
+a.scroll-down-duh {
+  position: absolute;
+  bottom: 40px;
+  color: white;
+  font-size: 4rem;
+  transition: 3s ease-in-out;
+  animation: nudge 2.5s 6s 4, slideUpFadeIn 6s;
+}
+
+.scrolled .scroll-down-duh {
+  opacity: 0;
 }
 
 
@@ -55,9 +69,20 @@ Animations
   }
 }
 
+@keyframes nudge {
+  0%, 16.5%, 33%, 100% {
+    transform: translateY(0);
+  }
+  8.25%, 24.75% {
+    transform: translateY(-10px);
+  }
+}
+
 /* --------------------------------------------------------
 Mobile Styles
 ----------------------------------------------------------- */
 @media only screen and (max-width: 650px) {
-
+  a.scroll-down-duh {
+    bottom: 20px;
+  }
 }

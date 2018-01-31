@@ -1,5 +1,5 @@
 form {
-  margin: 50px 0;
+  margin: 50px 0 80px;
   position: relative;
 }
 
@@ -19,6 +19,7 @@ label {
 }
 
 input, textarea {
+  color: $darkPurple;
   border: none;
   margin: 10px 0 20px;
   font-size: 1.5rem;
@@ -97,6 +98,9 @@ button {
     transform: translateX(0);
     pointer-events: auto;
   }
+  &:hover::after {
+    transform: translateY(2px);
+  }
 }
 
 .next::after {
@@ -112,6 +116,7 @@ button {
   content: "\f178";
   line-height: 2;
   -webkit-font-smoothing: antialiased;
+  transition: all .4s ease;
 }
 
 .show-next .number-current {
@@ -165,9 +170,7 @@ button {
   padding: 0.5em;
   width: 100%;
   text-align: center;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   &.show {
     visibility: visible;
     opacity: 1;
